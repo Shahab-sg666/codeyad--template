@@ -1,0 +1,341 @@
+/* reset all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(Fonts/Vazir-Medium.woff);
+}
+
+body {
+    direction: rtl;
+    font-family: vazir;
+    font-size: 16px;
+}
+
+/* header navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #674cc4;
+    width: 100%;
+    height: 100%;
+    max-height: 70px; 
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 10px 1px #e2d9ff;
+}
+
+.right__navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    max-height: 70px; 
+}
+
+.logo {
+    width: 200px;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar__list {
+    display: flex;
+    padding: 0 1rem;
+}
+
+.navbar__list li {
+    list-style: none;
+}
+
+.navbar__list a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1.5rem;
+    font-size: 14px;
+}
+
+.navbar__list a:hover {
+    color: #cbcbcb;
+}
+
+.left__navbar {
+    display: flex;
+    padding: 0 3rem;
+}
+
+.searchbar__container {
+    position: relative;
+}
+
+.left__navbar input {
+    width: 270px;
+    padding: 0.4rem 0.7rem;
+    border: none;
+    border-radius: 15px;
+    margin: 0 2rem;
+}
+
+.position__icon {
+    position: absolute;
+    left: 40px;
+    background-color: #e2d9ff;
+    color: #674cc4;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.left__navbar input::placeholder {
+    font-family: vazir;
+    font-size: 13px;
+    color: #888888;
+    position: absolute;
+}
+
+.left__navbar a {
+    text-decoration: none;
+    color: #674cc4;
+    background-color: #f2effd;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+/* header navbar */
+
+/* main */
+.main__container {
+    width: 100%;
+    max-width: 1400px;
+    border: 2px solid rgb(16, 9, 15);
+    display: flex;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+/* aside */
+.main__container--right {
+    border: 2px solid rgb(144, 7, 7);
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    max-width: 306px;
+    max-height: 70px;
+    margin: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #674cc4;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.item div {
+    text-align: center;
+    position: absolute;
+    left: 60px;
+}
+
+.item img {
+    width: 80px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.item h2 {
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    margin: 2px 0;
+}
+
+.item p {
+    font-size: 11px;
+    color: white;
+}
+
+.long-description {
+    position: absolute;
+    left: 20px !important; 
+}
+
+.special__courses {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 320px;
+    margin: 1rem;
+    border-radius: 20px;
+    border: solid 1px blueviolet;
+    z-index: 10;
+}
+
+.header__special__courses {
+    display: flex;
+    position: relative;
+    height: 60px;
+    z-index: 1;
+    border-radius: 20px 20px 0 0;
+    background-color: #674cc4;
+}
+
+.header__special__courses img {
+    position: absolute;
+    right: 10px;
+    top: -15px;
+}
+
+.header__special__courses h2 {
+    position: absolute;
+    left: 40px;
+    margin: 0.3rem;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.special__courses__image {
+    background-color: #674cc4;
+    max-height: 150px;
+}
+
+.special__courses__image img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.special__courses__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.special__courses__content div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem 0.3rem;
+}
+
+.special__courses__content a {
+    color: #007bff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0.1rem 0.3rem;
+}
+
+.special__courses__content span {
+    color: #424242;
+    font-size: 13px;
+}
+/* aside */
+
+/* main */
+.main__container--left {
+    border: 2px solid rgb(33, 80, 210);
+    width: 100%;
+    max-width: 1050px;
+}
+
+.banner__container {
+    text-align: center;
+    margin: 1rem;
+}
+
+.banner__container img {
+    width: 100%;
+    max-width: 930px;
+    border-radius: 18px;
+}
+
+/* last update */
+.last__updates {
+    width: 100%;
+    max-width: 930px;
+    margin-inline: auto;
+}
+
+.last__updates__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.last__updates__header h2 {
+    font-size: 1rem;
+    color: #424242;
+}
+
+.last__updates__header a {
+    text-decoration: none;
+    color: #424242;
+    border: 2px solid #424242;
+    padding: 0.5rem;
+    border-radius: 18px;
+    transition: 0.5s;
+}
+
+.last__updates__header a:hover {
+    background-color: #674cc4;
+    color: white;
+}
+
+.last__updates__content {
+    margin: 1rem 0;
+    display: flex;
+    gap: 10px;
+}
+
+.last__updates__content img {
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+    cursor: pointer;
+}
+
+.course {
+    width: 100%;
+    max-width: 310px;
+    height: 250px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 12px grey;
+}
+
+.course__caption {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.course__caption a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.course__caption span {
+    font-size: 13px;
+    color: #424242;
+}
+
+.detail__course {
+    display: flex;
+    justify-content: space-between;
+    color: #424242;
+    font-size: 13px;
+    margin: 0.5rem;
+    margin-block: auto;
+}
+
+
+
