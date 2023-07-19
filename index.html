@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' /> 
     <title>Home</title>
 </head>
 
@@ -30,18 +31,19 @@
 
             <div class="searchbar__container">
                 <input type="text" name="search" placeholder="هر چی میخوای جستجو کن" />
-                <i class="ri-search-line position__icon"></i>
+                <button class="position__icon"><i class="ri-search-line serach__icon__size"></i></button>
             </div>
 
 
             <a href="">ورود / ثبت نام</a>
         </div>
     </div>
-    <!-- header navbar -->
+    <!-- /header navbar -->
 
     <!-- main -->
     <section class="main__container">
 
+        <!-- aside -->
         <aside class="main__container--right">
 
             <section class="item">
@@ -103,10 +105,17 @@
                     </div>
                 </div>
             </section>
+            
+            <div class="social__media__icons">
+                <a href=""><i class='fa fa-instagram'></i></a>
+                <a href=""><i class='fa fa-telegram'></i></a>
+                <a href=""><i class='fa fa-twitter'></i></a>
+                <a href=""><i class='fa fa-linkedin-square'></i></a>
+            </div>
 
         </aside>
+         <!-- /aside -->
 
-        <!-- main -->
         <div class="main__container--left">
             <div class="banner__container">
                 <img src="/Images/cbc95755-a482-497e-a352-b13bbd5b477a1634516451280.jpg" alt="">
@@ -196,10 +205,218 @@
                     </div>
                 </div>
             </section>
+            <!-- /last update -->
+            
+            <!-- where to start -->
+            <div class="hero__template">
+                <div class="hero__template__image">
+                    <img src="Images/shuttel.png" alt="shuttel-photo">
+                </div>
+                
+                <div class="hero__template__content">
+                    <h3>برنامه نویسی رو از کجا شروع کنم؟</h3>
+                    
+                    <p>برنامه‌نویسی ابزاری نوین برای تسلط بر جهان تکنولوژی است. بهترین روش برای فراگیری این علم از پایه و به صورت تخصصی، گذراندن دوره‌های آموزش برنامه نویسی زیر نظر مدرسان کارآزموده است. کدیاد، تیمی متشکل از مدرسان متخصص می‌باشد و هدفشان آموزش صفر تا صد برنامه نویسی به علاقه‌مندان است. در ضمن بسیاری از دوره‌های موجود در کدیاد، رایگان بوده و شما می‌توانید نیمی از مسیر را بدون هیچ هزینه‌ای پیش بروید.</p>
+                    
+                    <a href="">بزن بریم</a>
+                </div>
+            </div>
+            <!-- /where to start -->
+            
+            <!-- codeyad suggestion -->
+            <section class="last__updates">
+                <div class="last__updates__header">
+                    <h2>پیشنهاد کدیاد</h2>
+                    <a href="">همه رو ببین</a>
+                </div>
+
+                <div class="last__updates__content">
+                    <div class="course">
+                        <img src="Images/4af0a576-13c2-4998-949e-d545061ddfb31747335097536.jpg" alt="course-photo">
+
+                        <div class="course__caption">
+                            <a href="">آموزش رایگان html css از مقدماتی تا پیشرفته</a>
+
+                            <span>میلاد ده یامی</span>
+                        </div>
+
+                        <div class="detail__course">
+                            <div>
+                                <span>رایگان</span>
+                            </div>
+                            <div>
+                                <span><i class="ri-time-fill"></i></span>
+                                <span>12:18:21</span>
+                            </div>
+                            <div>
+                                <span><i class="ri-film-line"></i></span>
+                                <span>39</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <img src="Images/ab057b3d-ba30-4230-8a3f-aba82d9a42111745024184462.jpg" alt="laravel-course-photo">
+
+                        <div class="course__caption">
+                            <a href="">آموزش رایگان برنامه‌نویسی c++</a>
+
+                            <span>علی خموش</span>
+                        </div>
+
+                        <div class="detail__course">
+                            <div>
+                                <span>رایگان</span>
+                            </div>
+                            <div>
+                                <span><i class="ri-time-fill"></i></span>
+                                <span>20:13:42</span>
+                            </div>
+                            <div>
+                                <span><i class="ri-film-line"></i></span>
+                                <span>42</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <img src="Images/879469f5-71fd-4ce3-ac82-ae0c37a31a421322162793665.jpg" alt="asp-course-photo">
+
+                        <div class="course__caption">
+                            <a href="">دوره رایگان سی شارپ #C</a>
+
+                            <span>میلاد ده یامی</span>
+                        </div>
+                        
+                        <div class="detail__course">
+                            <div>
+                                <span>رایگان</span>
+                            </div>
+                            <div>
+                                <span><i class="ri-time-fill"></i></span>
+                                <span>06:12:03</span>
+                            </div>
+                            <div>
+                                <span><i class="ri-film-line"></i></span>
+                                <span>20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /codeyad suggestion -->
+            
+            <!-- last articles -->
+            <section class="last__articles">
+                <div class="last__articles__header">
+                    <h3>آخرین مقالات</h3>
+                </div>
+                
+                <div class="last__articles__content">
+                    
+                    <div class="article__item">
+                        
+                        <div class="image__article">
+                            <a href=""><img src="Images/972ad560-9499-41d0-8122-b1fb3d3cee0b1112370591218.jpg" alt="" /></a>
+                        </div>
+                        
+                        <div class="content__article">
+                            <a href="">آشنایی با اهمیت لینکدین برای برنامه نویسان</a>
+                            <p>یکی از شبکه های اجتماعی بسیار مهم در عصر امروز لینکدین است. این پلتفرم که متعلق به شرکت بزرگ ماکروسافت ...</p>
+                            
+                            <div class="detail__article">
+                                <div>
+                                    <span><i class="ri-user-line fs-lg"></i></span>
+                                    <span>محمدرضا احمی</span>
+                                </div>
+                                
+                                <div>
+                                    <span><i class="ri-eye-line"></i></span>
+                                    <span>1,688</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="article__item">
+                        
+                        <div class="image__article">
+                            <a href=""><img src="Images/99f89c0b-441b-4609-ab39-3440741e81192038123824476.jpg" alt="" /></a>
+                        </div>
+                        
+                        <div class="content__article">
+                            <a href="">آشنایی با ۷ مزیت فریم ورک materialize برای طراحان سایت!</a>
+                            <p>فریم ورک materialize یک سبک طراحی زیبا است که به وسیله گوگل ساخته شده است. شما با فریم ورک متریالیز ب...</p>
+                            
+                            <div class="detail__article">
+                                <div>
+                                    <span><i class="ri-user-line fs-lg"></i></span>
+                                    <span>محمدرضا احمی</span>
+                                </div>
+                                
+                                <div>
+                                    <span><i class="ri-eye-line"></i></span>
+                                    <span>617</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="article__item">
+                        
+                        <div class="image__article">
+                            <a href=""><img src="Images/d394f44e-887f-465a-9e67-a54d6d4ad37a1700570979723.jpg" alt="" /></a>
+                        </div>
+                        
+                        <div class="content__article">
+                            <a href="">مقایسه یادگیری FlexBox و css grid برای برنامه نویسان وب!</a>
+                            <p>همانطور که در جریان هستید، در سال‌های اخیر، طراحی وب جز یکی از حرفه‌های بسیار پر طرفدار و پر درآمد به...</p>
+                            
+                            <div class="detail__article">
+                                <div>
+                                    <span><i class="ri-user-line fs-lg"></i></span>
+                                    <span>محمدرضا احمی</span>
+                                </div>
+                                
+                                <div>
+                                    <span><i class="ri-eye-line"></i></span>
+                                    <span>689</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="article__item">
+                        
+                        <div class="image__article">
+                            <a href=""><img src="Images/e37c60cd-cf85-418d-aa4f-d9606e0cdbb71328501314701.jpg" alt="" /></a>
+                        </div>
+                        
+                        <div class="content__article">
+                            <a href="">فلکس باکس چیست؟ + کاربردهای یادگیری FlexBox</a>
+                            <p>شاید برای یک‌بار هم شده اسم فلکس باکس (flex-box) رو شنیده باشید. اگر نشده که تا حالا بشنوید باید به ش...</p>
+                            
+                            <div class="detail__article">
+                                <div>
+                                    <span><i class="ri-user-line fs-lg"></i></span>
+                                    <span>محمدرضا احمی</span>
+                                </div>
+                                
+                                <div>
+                                    <span><i class="ri-eye-line"></i></span>
+                                    <span>658</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /last articles -->
         </div>
 
 
     </section>
+    <!-- /main -->
 
 </body>
 
