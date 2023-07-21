@@ -18,6 +18,9 @@ body {
 
 /* header navbar */
 .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -120,7 +123,7 @@ body {
     max-width: 1400px;
     display: flex;
     margin-inline: auto;
-    margin-block: 1rem;
+    margin-block: 5rem;
 }
 
 /* aside */
@@ -579,3 +582,4 @@ body {
     margin-block: 2rem;
     color: white;
 }
+/* /footer */
