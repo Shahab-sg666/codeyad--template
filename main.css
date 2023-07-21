@@ -118,7 +118,6 @@ body {
 .main__container {
     width: 100%;
     max-width: 1400px;
-    border: 2px solid rgb(16, 9, 15);
     display: flex;
     margin-inline: auto;
     margin-block: 1rem;
@@ -126,7 +125,6 @@ body {
 
 /* aside */
 .main__container--right {
-    border: 2px solid rgb(144, 7, 7);
     flex-basis: 350px;
     display: flex;
     flex-direction: column;
@@ -184,7 +182,7 @@ body {
     max-height: 320px;
     margin: 1rem;
     border-radius: 20px;
-    border: solid 1px blueviolet;
+    box-shadow: 2px 2px 8px #bdbdbd;
     z-index: 10;
 }
 
@@ -270,7 +268,6 @@ body {
 
 /* main */
 .main__container--left {
-    border: 2px solid rgb(33, 80, 210);
     width: 100%;
     max-width: 1050px;
 }
@@ -365,6 +362,7 @@ body {
     margin: 0.5rem;
     margin-block: auto;
 }
+/* /last update */
 
 /* where to start */
 .hero__template {
@@ -417,7 +415,7 @@ body {
 .hero__template__content a:hover {
     color: yellow;
 }
-/* where to start */
+/* /where to start */
 
 /* last articles */
 .last__articles {
@@ -491,4 +489,93 @@ body {
     margin-top: 0.1rem;
     display: inline-block;
 }
+/* /last articles */
 
+/* footer */
+.footer {
+    margin-top: 5rem;
+    width: 100%;
+    height: 480px;
+    background-color: #4c288f;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0px 0px 1px 20px #e2d9ff; 
+    display: flex;
+}
+
+.footer__right__side {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sending__email input {
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+}
+
+.sending__email input::placeholder {
+    font-family: vazir;
+    color: #8c8c8c;
+}
+
+.sending__email a {
+    color: white;
+    background-color: green;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.footer__labels {
+    color: white;
+}
+
+.footer__labels a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__labels li {
+    margin: 0.8rem;
+}
+
+.footer__social__media__icons {
+    display: flex;
+    color: white;
+}
+
+.footer__social__media__icons i {
+    color: white;
+    font-size: 32px;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.footer__social__media__icons i:hover {
+    color: yellow;
+    font-size: 40px;
+}
+
+.footer__left__side {
+    margin: 2rem;
+    width: 900px;
+    position: relative;
+}
+
+.enamad__size {
+    width: 120px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer__left__side p {
+    margin-block: 2rem;
+    color: white;
+}
