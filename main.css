@@ -16,6 +16,26 @@ body {
     font-size: 16px;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    background-color: #f2effd;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid rgb(210, 210, 210);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #674cc4;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* scrollbar */
+
 /* header navbar */
 .navbar {
     position: fixed;
@@ -80,6 +100,14 @@ body {
     border: none;
     border-radius: 15px;
     margin: 0 2rem;
+    outline: none;
+}
+
+.left__navbar input::placeholder {
+    font-family: vazir;
+    font-size: 13px;
+    color: #888888;
+    position: absolute;
 }
 
 .position__icon {
@@ -97,13 +125,6 @@ body {
 
 .serach__icon__size {
     font-size: 18px;
-}
-
-.left__navbar input::placeholder {
-    font-family: vazir;
-    font-size: 13px;
-    color: #888888;
-    position: absolute;
 }
 
 .left__navbar a {
@@ -513,11 +534,12 @@ body {
 }
 
 .sending__email input {
-    width: 230px;
-    height: 40px;
+    width: 255px;
+    height: 45px;
     border-radius: 5px;
     border: none;
     padding: 0.5rem;
+    outline: none;
 }
 
 .sending__email input::placeholder {
@@ -583,3 +605,9 @@ body {
     color: white;
 }
 /* /footer */
+
+
+/* responsive */
+@media () {
+    
+}
